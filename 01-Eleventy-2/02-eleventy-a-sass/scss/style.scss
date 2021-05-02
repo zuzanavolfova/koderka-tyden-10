@@ -1,0 +1,87 @@
+$barva: #0066ff;
+$pismo: Georgia, serif;
+$velikost-pisma: 16px;
+$spacer: 20px;
+
+// -------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+
+body {
+	font-family: $pismo;
+	font-size: $velikost-pisma;
+}
+
+h1, h2, h3 {
+	color: $barva;
+}
+
+.header {
+	border: 10px solid $barva;
+	padding: $spacer;
+	text-align: center;
+
+	:first-child {
+		margin-top: 0;
+	}
+
+	:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+
+.menu {
+  background-color: $barva;
+
+	&__list {
+		margin: 0;
+		padding: 2px;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+	}
+
+	&__item:not(:last-child) {
+		border-right: 1px solid white;
+	}
+
+	&__link {
+		display: block;
+		padding: ($spacer / 2) $spacer;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover,
+		&:focus {
+			background-color: white;
+			color: $barva;
+		}
+	}
+
+}
+
+
+.main {
+  margin: $spacer 0;
+  padding: $spacer;
+  border: 3px solid #b9b9b9;
+  overflow: auto;
+}
+
+
+.footer {
+  background-color: $barva;
+	color: white;
+  padding: 30px;
+  text-align: center;
+}

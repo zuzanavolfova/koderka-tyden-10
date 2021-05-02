@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+
+	<!-- Náš vlastní styl -->
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+	<header class="header">
+		<h1>{{ title }}</h1>
+		<p>Můj blogísek o použití Sassu v Eleventy</p>
+	</header>
+
+	<nav class="menu">
+		<ul class="menu__list">
+			<li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+			<li class="menu__item"><a href="/page1/" class="menu__link">Stránka 1</a></li>
+			<li class="menu__item"><a href="/page2/" class="menu__link">Stránka 2</a></li>
+		</ul>
+	</nav>
+
+	<main class="main">
+
+		{{ content | safe }}
+
+	</main>
+
+
+	<footer class="footer">
+		&copy;2021, Czechitas
+	</footer>
+
+</body>
+</html>

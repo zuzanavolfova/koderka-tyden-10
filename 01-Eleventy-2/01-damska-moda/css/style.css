@@ -1,0 +1,192 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  background-color: peachpuff;
+  padding: 30px;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+  color: #e77b68;
+}
+
+.menu {
+  background-color: black;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu__item:not(:last-child) {
+  border-right: 1px solid peachpuff;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px 30px;
+  color: peachpuff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu__link:hover, .menu__link:focus {
+  background-color: peachpuff;
+  color: black;
+}
+
+.main {
+  margin: 30px 0;
+  padding: 30px;
+  border: 3px solid #b9b9b9;
+  overflow: auto;
+  flex: 1;
+}
+
+.image {
+  width: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.image--left {
+  max-width: 400px;
+  float: left;
+  margin: 0 30px 15px 0;
+}
+
+.image--right {
+  max-width: 400px;
+  float: right;
+  margin: 0 0 15px 30px;
+}
+
+.footer {
+  background-color: #e5e5e5;
+  padding: 30px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.grid__item {
+  border: 3px solid black;
+}
+
+.grid__item-img {
+  display: block;
+  width: 100%;
+}
+
+.grid__item-desc {
+  background-color: #888;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid__item-desc h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: peachpuff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: peachpuff;
+  color: black;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #e77b68;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.detail h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.detail__img {
+  display: block;
+  width: 100%;
+}
+
+.detail__sizes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.detail__sizes li {
+  display: block;
+  padding: 10px 20px;
+  background-color: peachpuff;
+  margin-right: 2px;
+}
+
+.detail__price {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.info {
+  padding: 20px;
+  background-color: #b9dff5;
+  border: 2px solid #0c86cc;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.wrapper > :not(:first-child) {
+  margin-left: 30px;
+}
+
+.aside {
+  margin: 30px 0;
+}

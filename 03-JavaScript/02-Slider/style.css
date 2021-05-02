@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+	padding: 1em;
+}
+
+h2 {
+	margin-top: 50px;
+}
