@@ -1,0 +1,17 @@
+@use 'colors';
+
+.header {
+	border: 10px solid colors.$primarni;
+	padding: 20px;
+	text-align: center;
+
+	&__title {
+		color: colors.$primarni;
+		margin-top: 0;
+	}
+
+	&__subtitle {
+		margin-bottom: 0;
+		color: colors.$seda;
+	}
+}

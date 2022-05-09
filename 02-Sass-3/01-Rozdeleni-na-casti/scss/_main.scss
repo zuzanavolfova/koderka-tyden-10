@@ -1,0 +1,8 @@
+@use 'colors';
+
+.main {
+    margin: 20px 0;
+    padding: 20px;
+    border: 3px solid colors.$seda;
+    overflow: auto;
+  }
